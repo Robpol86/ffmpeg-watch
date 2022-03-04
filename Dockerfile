@@ -8,3 +8,5 @@ RUN --mount=type=bind,target=/repo --mount=type=tmpfs,target=/tmp \
     cp -v ffmpeg ffprobe /usr/local/bin/ && \
     ffprobe -version && \
     ffmpeg -version
+RUN ls -lah /
+RUN ls -lah /tmp
